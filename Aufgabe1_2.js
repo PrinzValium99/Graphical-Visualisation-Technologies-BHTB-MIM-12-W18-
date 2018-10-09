@@ -16,10 +16,15 @@ window.onkeydown = function(evt) {
     var c = String.fromCharCode(key);
     switch (c) {
     case ('R'):
+		window.clearInterval(intervalID);
 		intervalID = window.setInterval(decreaseImage, 500);
         break;
     case ('I'):
+		window.clearInterval(intervalID);
 		intervalID = window.setInterval(increaseImage, 500);
+        break;
+	case ('Z'):
+		window.clearInterval(intervalID);
         break;
     }
 };

@@ -43,6 +43,6 @@ function increaseImage() {
 
 
 //function changeImage(imagename) {
-        var elem = document.getElementById('textSpan');
-        elem.style.color = color;
-    }
+//        var elem = document.getElementById('textSpan');
+//        elem.style.color = color;
+//    }

@@ -18,11 +18,11 @@ window.onkeydown = function(evt) {
     switch (c) {
     case ('R'):
 		window.clearInterval(intervalID);
-		intervalID = window.setInterval(decreaseImage, 50);
+		intervalID = window.setInterval(decreaseImage, speed);
         break;
     case ('I'):
 		window.clearInterval(intervalID);
-		intervalID = window.setInterval(increaseImage, 50);
+		intervalID = window.setInterval(increaseImage, speed);
         break;
 	case ('Z'):
 		window.clearInterval(intervalID);

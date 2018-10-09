@@ -31,12 +31,12 @@ function decreaseImage() {
 		imageNr += numberSprites;
 	}
 
-	loadImage("Kreis-"+imageNr+".png");
+	loadImage("Tier-"+imageNr+".png");
 }
 
 function increaseImage() {
 	
 	imageNr = (imageNr + 1)%numberSprites;
 	
-	loadImage("Kreis-"+imageNr+".png");
+	loadImage("Tier-"+imageNr+".png");
 }

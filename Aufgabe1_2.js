@@ -1,5 +1,6 @@
 var imageNr = 0;
 var intervalID;
+var speed = 50;
 
 function loadImage(filename) {
     var imageObj = new Image();
@@ -17,11 +18,11 @@ window.onkeydown = function(evt) {
     switch (c) {
     case ('R'):
 		window.clearInterval(intervalID);
-		intervalID = window.setInterval(decreaseImage, 500);
+		intervalID = window.setInterval(decreaseImage, 50);
         break;
     case ('I'):
 		window.clearInterval(intervalID);
-		intervalID = window.setInterval(increaseImage, 500);
+		intervalID = window.setInterval(increaseImage, 50);
         break;
 	case ('Z'):
 		window.clearInterval(intervalID);

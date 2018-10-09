@@ -39,10 +39,3 @@ function increaseImage() {
 	
 	loadImage("Kreis-"+imageNr+".png");
 }
-
-
-
-//function changeImage(imagename) {
-//        var elem = document.getElementById('textSpan');
-//        elem.style.color = color;
-//    }

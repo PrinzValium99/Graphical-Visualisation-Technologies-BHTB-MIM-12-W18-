@@ -1,4 +1,5 @@
 var imageNr = 0;
+var intervalID;
 
 function loadImage(filename) {
     var imageObj = new Image();
@@ -15,10 +16,10 @@ window.onkeydown = function(evt) {
     var c = String.fromCharCode(key);
     switch (c) {
     case ('R'):
-		var intervalID = window.setInterval(decreaseImage, 500);
+		intervalID = window.setInterval(decreaseImage, 500);
         break;
     case ('I'):
-		var intervalID = window.setInterval(increaseImage, 500);
+		intervalID = window.setInterval(increaseImage, 500);
         break;
     }
 };

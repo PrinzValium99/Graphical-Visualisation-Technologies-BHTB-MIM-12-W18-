@@ -18,7 +18,7 @@ window.onkeydown = function(evt) {
 		var intervalID = window.setInterval(decreaseImage, 500);
         break;
     case ('I'):
-		var intervalID = window.setInterval(IncreaseImage, 500);
+		var intervalID = window.setInterval(increaseImage, 500);
         break;
     }
 };

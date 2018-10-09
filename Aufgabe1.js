@@ -1,4 +1,5 @@
 var imageNr = 0;
+var numberSprites = 8;
 
 function loadImage(filename) {
     var imageObj = new Image();
@@ -25,9 +26,9 @@ window.onkeydown = function(evt) {
 
 function decreaseImage() {
 	
-	imageNr = (imageNr - 1)%8;
+	imageNr = (imageNr - 1)%numberSprites;
 	if (imageNr < 0) {
-		imageNr += 8;
+		imageNr += numberSprites;
 	}
 
 	loadImage("Kreis-"+imageNr+".png");
@@ -35,7 +36,7 @@ function decreaseImage() {
 
 function increaseImage() {
 	
-	imageNr = (imageNr + 1)%8;
+	imageNr = (imageNr + 1)%numberSprites;
 	
 	loadImage("Kreis-"+imageNr+".png");
 }

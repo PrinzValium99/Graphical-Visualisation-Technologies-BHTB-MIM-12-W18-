@@ -1,9 +1,10 @@
 var imageNr = 0;
+var numberSprites = 9;
 
 function loadImage(filename) {
     var imageObj = new Image();
     imageObj.onload = function() {
-        var img = document.getElementById('Kreis');
+        var img = document.getElementById('Tier');
         img.setAttribute('src', this.src);
     };
     imageObj.src = "textures/" + filename;
@@ -25,9 +26,9 @@ window.onkeydown = function(evt) {
 
 function decreaseImage() {
 	
-	imageNr = (imageNr - 1)%8;
+	imageNr = (imageNr - 1)%numberSprites;
 	if (imageNr < 0) {
-		imageNr += 8;
+		imageNr += numberSprites;
 	}
 
 	loadImage("Kreis-"+imageNr+".png");
@@ -35,7 +36,7 @@ function decreaseImage() {
 
 function increaseImage() {
 	
-	imageNr = (imageNr + 1)%8;
+	imageNr = (imageNr + 1)%numberSprites;
 	
 	loadImage("Kreis-"+imageNr+".png");
 }

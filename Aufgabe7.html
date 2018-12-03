@@ -3,7 +3,8 @@
 	<head>
 		<script src="ext/gl-matrix.js"></script>
 		<script src="models/GVT_Src_vertexData_plane.js"></script>
-		<script src="models/GVT_Src_vertexData_sphere1.js"></script>
+		<script src="models/GVT_Src_vertexData_torus2.js"></script>
+		<script src="models/GVT_Src_vertexData_cylinder.js"></script>
 		<script src="Aufgabe7.js"></script>
 		<script type="x-shader/x-vertex" id="vertexshader">
 			precision mediump float;
@@ -44,6 +45,8 @@
 		</script>
 	</head>
 	<body onload="app.start()">
-		<canvas id="canvas" width="1000" height="1000"></canvas>
+		<p>W, S, A, D zum Drehen der Kamera </br>
+		Q, E zum Zoomen	</p>
+		<canvas id="canvas" width="1500" height="1000"></canvas>
 	</body>
 </html>
